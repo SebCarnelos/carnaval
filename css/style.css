@@ -5,24 +5,53 @@ body {
 #banner{
     height: 100vh;
     background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#banlogo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banlogo img {
+    width: 300px;
+}
+
+#banarrow{
+    height: fit-content;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#banarrow a {
+    color: white;
 }
 
 #wip {
-    height: 50vh;
-    background-color: blue;
+    height: fit-content;
+    background-color: white;
+    padding: 30px;
 }
 
 #socialnetwork {
-    height: 50vh;
+    height: fit-content;
     background-color: chartreuse; 
+    padding: 20px;
 }
 
 #generationheroes {
-    height: 100vh;
+    height: fit-content;
     background-color: crimson;
+    padding: 20px;
 }
 
 #footer {
-    height: 10vh;
+    height: fit-content;
     background-color: darkorange;
+    padding: 10px;
 }
