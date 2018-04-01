@@ -35,23 +35,36 @@ body {
 #wip {
     height: fit-content;
     background-color: white;
-    padding: 30px;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+#wip img {
+    height: 100px;
+    margin-bottom: 50px;
 }
 
 #socialnetwork {
     height: fit-content;
-    background-color: chartreuse; 
-    padding: 20px;
+    background-color: lightgrey; 
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#socialnetwork img {
+    width: 50px;
+    margin: 40px 20px 0 20px;
 }
 
 #generationheroes {
     height: fit-content;
-    background-color: crimson;
+    background-color: black;
     padding: 20px;
+    color: white;
 }
 
 #footer {
     height: fit-content;
-    background-color: darkorange;
+    background-color: white;
     padding: 10px;
 }
