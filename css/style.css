@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+#banner{
+    height: 100vh;
+    background-color: black;
+}
+
+#wip {
+    height: 50vh;
+    background-color: blue;
+}
+
+#socialnetwork {
+    height: 50vh;
+    background-color: chartreuse; 
+}
+
+#generationheroes {
+    height: 100vh;
+    background-color: crimson;
+}
+
+#footer {
+    height: 10vh;
+    background-color: darkorange;
+}
