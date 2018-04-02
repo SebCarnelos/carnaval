@@ -104,6 +104,27 @@ body {
     margin: 0 5px;
 }
 
+#order {
+    margin-top: 50px;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    border: 1px solid #020300;
+    border-radius: 2px;
+}
+
+button {
+    font-family: 'Maven Pro', sans-serif;
+    color: #FFFFFC;
+    background-color: #7C7C7C;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
 #footer {
     height: fit-content;
     background-color: #FFFFFC;
