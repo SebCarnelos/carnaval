@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carnaval {
+    font-family: 'Maven Pro', sans-serif;
 }
 
 #banner{
@@ -68,6 +73,24 @@ body {
     width: 250px;
 }
 
+#ghtitle {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#price {
+    font-family: 'Maven Pro', sans-serif;
+    color: crimson;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+#shipping {
+    margin-top: 0;
+    font-size: 0.7em;
+    color: grey;
+}
+
 .preview {
     width: 150px;
     margin: 0 5px;
@@ -76,5 +99,25 @@ body {
 #footer {
     height: fit-content;
     background-color: white;
-    padding: 10px;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+
+#footer p {
+    margin: 0;
+    color: lightgray;
+}
+
+#websebs {
+    font-size: 0.8em
+}
+
+#flaticons {
+    font-size: 0.7em
+}
+
+#footer a {
+    color: gray;
+    text-decoration: none;
 }
