@@ -59,8 +59,18 @@ body {
 #generationheroes {
     height: fit-content;
     background-color: black;
-    padding: 20px;
+    padding: 60px 20px;
     color: white;
+    text-align: center;
+}
+
+#gh1cover {
+    width: 200px;
+}
+
+.preview {
+    width: 125px;
+    margin: 0 5px;
 }
 
 #footer {
