@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Lato:wght@300;400;700&display=swap");
 @use 'sass:color' {}/* http://meyerweb.com/eric/tools/css/reset/
 	v2.0 | 20110126
 	License: none (public domain)
@@ -40,5 +41,123 @@ table {
 
 hr {
   border-width: 0;
+}
+
+.gray {
+  opacity: 0.5;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  color: #00080A;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Francois One", sans-serif;
+  font-size: 2.25rem;
+  line-height: 3.25rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Francois One", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: #00AAC4;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:active {
+  color: #00AAC4;
+  text-decoration: none;
+}
+
+button {
+  background-color: #00AAC4;
+  color: #fff;
+  font-family: "Francois One", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+button:hover {
+  background-color: #009fb8;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 168, 194, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 168, 194, 0.25);
+}
+
+button:active {
+  background-color: #006078;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dark-bg {
+  background-color: #00080A;
+  color: #fff;
+}
+
+#topbar {
+  background-color: #00AAC4;
+}
+
+#slider {
+  background-color: #006078;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+
+#intro p {
+  opacity: 0.66;
+}
+
+.book-info p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.book-info p:last-of-type {
+  font-weight: 300;
+}
+
+.price {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #00AAC4;
+}
+
+.unavailable {
+  color: #C45700;
+}
+
+#footer {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

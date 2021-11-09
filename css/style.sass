@@ -1,7 +1,123 @@
 @use 'sass:color'
 @import 'reset'
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Lato:wght@300;400;700&display=swap')
 
+//font-family 
+$ff-brand: 'Francois One', sans-serif
+$ff-default: 'Lato', sans-serif
+
+// colors
 $white: #fff
 $dark: #00080A
+.gray
+    opacity: 0.5
 $blue: #00AAC4
+$dark-blue: #006078
 $orange: #C45700
+
+// font-weight
+$fw-light: 300
+$fw-regular: 400
+$fw-semi-bold: 600
+$fw-bold: 700
+
+// font-size
+$fs-large: 2.25rem//36px h1
+$fs-medium: 1.5rem//24px h2, prices
+$fs-default: 1.125rem //18px
+$fs-small: 1rem//16px
+
+//line-height
+$lh-large: 3.25rem//52px
+$lh-medium: 2.25rem//36px
+$lh-default: 1.5rem//24px
+$lh-small: 1.25rem//20px
+
+body
+    background-color: $white
+    font-family: $ff-default
+    color: $dark
+    font-size: $fs-default
+    line-height: $lh-default
+    font-weight: $fw-regular
+
+h1
+    font-family: $ff-brand
+    font-size: $fs-large
+    line-height: $lh-large
+    font-weight: $fw-regular
+
+h2
+    font-family: $ff-brand
+    font-size: $fs-medium
+    line-height: $lh-medium
+    font-weight: $fw-regular
+
+strong
+    font-weight: $fw-bold
+
+a
+    color: $blue
+    text-decoration: underline
+    &:hover
+        color: $white
+        text-decoration: none
+    &:active
+        color: $blue
+        text-decoration: none
+
+button
+    background-color: $blue
+    color: $white
+    font-family: $ff-brand
+    font-size: $fs-default
+    line-height: $lh-default
+    font-weight: $fw-regular
+    border: none
+    border-radius: 8px
+    padding: 8px 16px
+    &:hover
+        background-color: darken($blue, 2.4%)
+        box-shadow: 0px 4px 16px rgba(0, 168, 194, 0.25)
+    &:active
+        background-color: $dark-blue
+        box-shadow: none
+
+.dark-bg
+    background-color: $dark
+    color: $white
+
+#topbar
+    background-color: $blue
+
+#slider
+    background-color: $dark-blue
+    color: $white
+    font-size: $fs-medium
+    line-height: $lh-medium
+    font-weight: $fw-semi-bold
+
+#intro
+    p
+        opacity: 0.66
+
+.book-info p
+    font-size: $fs-small
+    line-height: $lh-small
+    font-weight: $fw-regular
+    &:last-of-type
+        font-weight: $fw-light
+
+.price
+    font-size: $fs-medium
+    line-height: $lh-medium
+    font-weight: $fw-bold
+    color: $blue
+
+.unavailable
+    color: $orange
+
+#footer
+    font-size: $fs-small
+    line-height: $lh-small
+    font-weight: $fw-light
