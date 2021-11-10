@@ -13,9 +13,9 @@
     <meta property="og:description" container="Carnaval est un label d'édition de bande-dessinée créé en 2005 par Sébastien (Sebs) Carnélos. Retrouvez toutes nos créations et publications sur notre site web.">
     <!-- <meta property="og:image" container=""> -->
     <meta property="og:locale" container="fr_FR">
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:900|Montserrat:300" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f921b59169.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <!-- TODO: change ico -->
     <link rel="icon" type="image/png" href="img/ico.png">
@@ -29,12 +29,16 @@
     </script>
 </head>
 <body>
-    <div id="topbar">
+    <header>
         <div class="container">
-            <img src="img/logo2020_color_ban.svg" alt="Logo 2020 color ban">
-            <div class="social">TWITTER FACEBOOK DISCORD</div>
+            <img src="img/logo2020_color_ban.svg" alt="Logo 2020 long couleur">
+            <div class="social">
+                <a href="https://twitter.com/twitCarnaval" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/editionscarnaval/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://discord.gg/htWya3zR4k" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
         </div>
-    </div>
+    </header>
     <div id="slider">
         <div class="container">
             <p>Texte</p>
@@ -42,15 +46,15 @@
         </div>
     </div>
     <div id="intro" class="dark-bg">
-        <div class="container">
+        <div class="container padding-v-64">
             <h1>Qui sommes-nous</h1>
             <p>Les Éditions <strong>CARNAVAL</strong> sont un label d’édition de bande-dessinée créé en 2005 par Sébastien (Sebs) Carnélos.</p>
             <p>Nous publions et distribuons, sur support papier ou numérique, les créations d’auteur·rice·s et artistes indépendant·e·s. Nous souhaitons proposer des oeuvres diversifiées dans leur style et dans leur genre tournées vers un large public.</p>
         </div>
     </div>
-    <div id="books">
+    <main>
         <div class="container">
-            <div class="card">
+            <section>
                 <div class="book">
                     <img src="img/books/" alt="cover">
                     <div class="book-info">
@@ -65,20 +69,18 @@
                     <p class="price">Gratuit</p>
                     <button>ICON Acheter</button>
                 </div>
-            </div>
+            </section>
         </div>
-    </div>
-    <div id="footer" class="dark-bg">
-        <div class="container">
-            <div id="copymark">
+    </main>
+    <footer class="dark-bg">
+        <div class="container padding-v-64">
+            <small>
                 <h2>Éditions CARNAVAL</h2>
                 <p>Tous les contenus sont copyright © 2021 Éditions Carnaval ou leurs propriétaires respectifs. Carnaval et ses logos sont © 2021 Éditions Carnaval. Tous droits réservés.</p>
                 <p>Site réalisé par <a href="https://www.sebcarnelos.fr">Seb Carnélos</a></p>
-            </div>
-            <div id="logo">
-                LOGO
-            </div>
+            </small>
+            <img src="img/logo2020_nb_notext_noshadow.svg" alt="Logo 2020 noir et blanc">
         </div>
-    </div>
+    </footer>
 </body>
 </html> 
