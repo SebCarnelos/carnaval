@@ -181,6 +181,61 @@ header .container {
   opacity: 0.66;
 }
 
+main .container {
+  padding: 128px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 128px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section img {
+  width: 300px;
+  height: 424px;
+}
+
+.book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.book .alt-cover:last-of-type {
+  display: none;
+}
+
 .book-info p {
   font-size: 1rem;
   line-height: 1.25rem;
@@ -191,14 +246,29 @@ header .container {
   font-weight: 300;
 }
 
+.book-action {
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .price {
   font-size: 1.5rem;
   line-height: 2.25rem;
+}
+
+.available {
   font-weight: 700;
   color: #00AAC4;
 }
 
 .unavailable {
+  line-height: 2.25rem;
+  font-weight: 400;
   color: #C45700;
 }
 

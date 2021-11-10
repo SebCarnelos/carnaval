@@ -1,9 +1,20 @@
 // Smooth scroll on anchor
 $(document).ready(function() {
-    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
-        var page = $(this).attr('href'); // Page cible
-        var speed = 750; // Durée de l'animation (en ms)
-        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-        return false;
-    });
+    let image = document.getElementsByClassName('alt-cover');
+    let position = 0;
+
+    const changeImage = () => {
+        if (position === 1) {
+            image[0].style.display = 'inline';
+            image[1].style.display = 'none';
+            position --;
+        }
+        else {
+            image[0].style.display = 'none';
+            image[1].style.display = 'inline';
+            position ++;
+        }
+    };
+
+    setInterval(changeImage, 3000)
 });

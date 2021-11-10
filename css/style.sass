@@ -130,6 +130,35 @@ header
     p
         opacity: 0.66
 
+main
+    .container
+        padding: 128px 0
+        display: flex
+        flex-direction: column
+        gap: 128px
+
+
+.row
+    display: flex
+    justify-content: space-between
+
+section
+    width: 300px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    img
+        width: 300px
+        height: 424px
+
+.book
+    display: flex
+    flex-direction: column
+    gap: 16px
+    .alt-cover:last-of-type
+        display: none
+
+
 .book-info p
     font-size: $fs-small
     line-height: $lh-small
@@ -137,13 +166,22 @@ header
     &:last-of-type
         font-weight: $fw-light
 
+.book-action
+    padding-top: 32px
+    display: flex
+    justify-content: space-between
+
 .price
     font-size: $fs-medium
     line-height: $lh-medium
+
+.available
     font-weight: $fw-bold
     color: $blue
 
 .unavailable
+    line-height: $lh-medium
+    font-weight: $fw-regular
     color: $orange
 
 footer
