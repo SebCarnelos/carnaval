@@ -122,13 +122,26 @@ header
     gap: 24px
 
 #slider
+    height: 576px
+    background-image: linear-gradient(79.19deg, #00080A 0%, rgba(0, 8, 10, 0) 86.22%), url('../img/lady_wolf_ban.jpg')
+    background-size: cover
     background-color: $dark-blue
-    // background: linear-gradient(79.19deg, #00080A 0%, rgba(0, 8, 10, 0) 86.22%)
-    // mix-blend-mode: multiply
     color: $white
     font-size: $fs-medium
     line-height: $lh-medium
     font-weight: $fw-semi-bold
+    .container
+        height: fill
+        padding: 72px 0
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-end
+        p
+            display: flex
+            align-items: center
+            gap: 16px
+            margin: 8px 0 32px
 
 #intro
     h1
