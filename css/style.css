@@ -118,6 +118,12 @@ button:active {
   color: #fff;
 }
 
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #topbar {
   background-color: #00AAC4;
 }
