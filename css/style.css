@@ -176,16 +176,22 @@ header .container {
 
 #slider {
   height: 576px;
-  background-image: linear-gradient(79.19deg, #00080A 0%, rgba(0, 8, 10, 0) 86.22%), url("../img/lady_wolf_ban.jpg");
   background-size: cover;
   background-color: #006078;
   color: #fff;
   font-size: 1.5rem;
   line-height: 2.25rem;
   font-weight: 600;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-#slider .container {
+#dark-gradient {
+  height: inherit;
+  background-image: linear-gradient(79.19deg, #00080A 0%, rgba(0, 8, 10, 0) 86.22%);
+}
+
+#dark-gradient .container {
   height: -webkit-fill-available;
   height: -moz-available;
   height: fill;
@@ -203,9 +209,11 @@ header .container {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-#slider .container p {
+#dark-gradient .container p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
