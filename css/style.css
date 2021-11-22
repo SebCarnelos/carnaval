@@ -104,6 +104,7 @@ i:active {
 }
 
 button {
+  cursor: pointer;
   background-color: #00AAC4;
   color: #fff;
   font-family: "Francois One", sans-serif;
