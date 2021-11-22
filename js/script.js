@@ -1,4 +1,13 @@
-document.addEventListener("DOMContentLoaded", function(){
+const internetExplorerDisclaimer = () => {
+    const user_agent = navigator.userAgent;
+    let is_it_ie = user_agent.indexOf("MSIE ") > -1 || user_agent.indexOf("Trident/") > -1;
+    if (is_it_ie){
+        alert("Ce site n'est pas compatible avec Internet Explorer. Nous vous recommandons d'utiliser un autre navigateur.");
+    }
+  };
+  internetExplorerDisclaimer();
+  
+  document.addEventListener('DOMContentLoaded', function(){
 
     //Banner slider
     const bannerArray = document.querySelectorAll('#dark-gradient > .container');
