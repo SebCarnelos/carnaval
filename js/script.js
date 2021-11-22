@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function(){
 
     //Banner slider
     const bannerArray = document.querySelectorAll('#dark-gradient > .container');
