@@ -2,7 +2,11 @@
 @import 'reset'
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Lato:wght@300;400;700&display=swap')
 
-//font-family 
+// responsive
+$breakpoint-s: 844px
+$breakpoint-m: 1152px
+
+// font-family 
 $ff-brand: 'Francois One', sans-serif
 $ff-default: 'Lato', sans-serif
 
@@ -107,9 +111,13 @@ button
     max-width: 1024px
     margin-left: auto
     margin-right: auto
+    @media (max-width: $breakpoint-m)
+        padding-left: 64px
+        padding-right: 64px
 
 .padding-v-64
-    padding: 64px 0
+    padding-top: 64px
+    padding-bottom: 64px
 
 header
     background-color: $blue
@@ -117,10 +125,16 @@ header
         display: flex
         justify-content: space-between
         align-items: center
+        @media (max-width: $breakpoint-s)
+            flex-direction: column
+            padding: 16px
+            row-gap: 8px
 
 .social
     display: flex
     gap: 24px
+    @media (max-width: $breakpoint-s)
+        gap: 72px
 
 #slider
     height: 576px
@@ -137,7 +151,8 @@ header
     background-image: linear-gradient(79.19deg, #00080A 0%, rgba(0, 8, 10, 0) 86.22%)
     .container
         height: fill
-        padding: 72px 0
+        padding-top: 72px
+        padding-bottom: 72px
         display: flex
         flex-direction: column
         align-items: flex-start
@@ -157,15 +172,13 @@ header
 
 main
     .container
-        padding: 128px 0
+        padding-top: 128px
+        padding-bottom: 128px
         display: flex
-        flex-direction: column
-        gap: 128px
-
-
-.row
-    display: flex
-    justify-content: space-between
+        gap: 128px 62px
+        flex-wrap: wrap
+        @media (max-width: $breakpoint-m)
+            justify-content: center
 
 section
     width: 300px
@@ -218,6 +231,8 @@ footer
         justify-content: center
         gap: 145px
         height: 135px
+        @media (max-width: $breakpoint-s)
+            gap: 64px
     img
         mix-blend-mode: luminosity
         opacity: 0.33

@@ -6,6 +6,7 @@ $(document).ready(function() {
     const gradient = 'linear-gradient(79.19deg, #00080A 0%, rgba(0, 8, 10, 0) 86.22%), ';
     const imgages = ['url("img/lady_wolf_ban.jpg")', 'url("img/generation_heros_ban.jpg")'];
     bgImage.style.backgroundImage = imgages[0];
+    bgImage.style.backgroundPosition = 'right';
     let slidePosition = 0;
     bannerArray[1].style.display = 'none';
     bannerArray[1].style.opacity = 0;
@@ -14,6 +15,7 @@ $(document).ready(function() {
         if (slidePosition === 1) {
             // bgImage.style.background = gradient + imgages[0];
             bgImage.style.backgroundImage = imgages[0];
+            bgImage.style.backgroundPosition = 'right';
             bannerArray[1].style.opacity = 0;
             setTimeout(() => {
                 bannerArray[1].style.display = 'none';
@@ -24,6 +26,7 @@ $(document).ready(function() {
         } else {
             // bgImage.style.background = gradient + imgages[1];
             bgImage.style.backgroundImage = imgages[1];
+            bgImage.style.backgroundPosition = 'left';
             bannerArray[0].style.opacity = 0;
             bannerArray[1].style.display = 'flex';
             setTimeout(() => {
@@ -33,7 +36,7 @@ $(document).ready(function() {
             slidePosition ++;
         }
      };
-    setInterval(changeSlide, 4000);
+    setInterval(changeSlide, 6000);
 
     // Alternate Covers
     const image = document.getElementsByClassName('alt-cover');
