@@ -218,9 +218,7 @@ header .container {
 }
 
 #dark-gradient .container {
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: fill;
+  height: 432px;
   padding-top: 72px;
   padding-bottom: 72px;
   display: -webkit-box;
