@@ -1,0 +1,245 @@
+@use 'sass:color'
+@import 'reset'
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Lato:wght@300;400;700&display=swap')
+
+// responsive
+$breakpoint-s: 844px
+$breakpoint-m: 1152px
+
+// font-family 
+$ff-brand: 'Francois One', sans-serif
+$ff-default: 'Lato', sans-serif
+
+// colors
+$white: #fff
+$dark: #00080A
+.gray
+    opacity: 0.5
+$blue: #00AAC4
+$dark-blue: #006078
+$orange: #C45700
+
+// font-weight
+$fw-light: 300
+$fw-regular: 400
+$fw-semi-bold: 600
+$fw-bold: 700
+
+// font-size
+$fs-large: 2.25rem//36px h1
+$fs-medium: 1.5rem//24px h2, prices
+$fs-default: 1.125rem //18px
+$fs-small: 1rem//16px
+
+//line-height
+$lh-large: 3.25rem//52px
+$lh-medium: 2.25rem//36px
+$lh-default: 1.5rem//24px
+$lh-small: 1.25rem//20px
+
+body
+    background-color: $white
+    font-family: $ff-default
+    color: $dark
+    font-size: $fs-default
+    line-height: $lh-default
+    font-weight: $fw-regular
+
+h1
+    font-family: $ff-brand
+    font-size: $fs-large
+    line-height: $lh-large
+    font-weight: $fw-regular
+
+h2
+    font-family: $ff-brand
+    font-size: $fs-medium
+    line-height: $lh-medium
+    font-weight: $fw-regular
+
+strong
+    font-weight: $fw-bold
+
+a
+    color: $blue
+    text-decoration: underline
+    &:hover
+        color: $white
+        text-decoration: none
+    &:active
+        color: $blue
+        text-decoration: none
+
+i //icons fontawesome
+    color: $white
+    font-size: 48px
+    &:hover
+         opacity: 0.66
+    &:active
+        color: $dark
+        opacity: 1
+
+button
+    cursor: pointer
+    background-color: $blue
+    color: $white
+    font-family: $ff-brand
+    font-size: $fs-default
+    line-height: $lh-default
+    font-weight: $fw-regular
+    border: none
+    border-radius: 8px
+    padding: 8px 16px
+    display: flex
+    gap: 8px
+    &:hover
+        background-color: darken($blue, 2.4%)
+        box-shadow: 0px 4px 16px rgba(0, 168, 194, 0.25)
+    &:active
+        background-color: $dark-blue
+        box-shadow: none
+
+.button-icon
+    width: 24px
+    height: 24px
+    
+.dark-bg
+    background-color: $dark
+    color: $white
+
+.container
+    max-width: 1024px
+    margin-left: auto
+    margin-right: auto
+    @media (max-width: $breakpoint-m)
+        padding-left: 64px
+        padding-right: 64px
+
+.padding-v-64
+    padding-top: 64px
+    padding-bottom: 64px
+
+header
+    background-color: $blue
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: $breakpoint-s)
+            flex-direction: column
+            padding: 16px
+            row-gap: 8px
+
+.social
+    display: flex
+    gap: 24px
+    @media (max-width: $breakpoint-s)
+        gap: 72px
+
+#slider
+    height: 576px
+    background-size: cover
+    background-color: $dark-blue
+    color: $white
+    font-size: $fs-medium
+    line-height: $lh-medium
+    font-weight: $fw-semi-bold
+    transition: all 1s ease-in-out
+
+#dark-gradient
+    height: inherit
+    background-image: linear-gradient(79.19deg, #00080A 0%, rgba(0, 8, 10, 0) 86.22%)
+    .container
+        height: 432px
+        padding-top: 72px
+        padding-bottom: 72px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-end
+        transition: opacity 0.5s ease-in-out
+        p
+            display: flex
+            align-items: center
+            gap: 16px
+            margin: 8px 0 32px
+
+#intro
+    h1
+        margin-bottom: 16px
+    p
+        opacity: 0.66
+
+main
+    .container
+        padding-top: 128px
+        padding-bottom: 128px
+        display: flex
+        gap: 128px 62px
+        flex-wrap: wrap
+        @media (max-width: $breakpoint-m)
+            justify-content: center
+
+section
+    width: 300px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    img
+        width: 300px
+        height: 424px
+
+.book
+    display: flex
+    flex-direction: column
+    gap: 16px
+    .alt-cover:last-of-type
+        display: none
+
+
+.book-info p
+    font-size: $fs-small
+    line-height: $lh-small
+    font-weight: $fw-regular
+    &:last-of-type
+        font-weight: $fw-light
+
+.book-action
+    padding-top: 32px
+    display: flex
+    justify-content: space-between
+
+.price
+    font-size: $fs-medium
+    line-height: $lh-medium
+
+.available
+    font-weight: $fw-bold
+    color: $blue
+
+.unavailable
+    line-height: $lh-medium
+    font-weight: $fw-regular
+    color: $orange
+
+footer
+    font-size: $fs-small
+    line-height: $lh-small
+    font-weight: $fw-light
+    .container
+        display: flex
+        justify-content: center
+        gap: 145px
+        height: 135px
+        @media (max-width: $breakpoint-s)
+            gap: 64px
+    img
+        mix-blend-mode: luminosity
+        opacity: 0.33
+    
+small
+    max-width: 412px
+    h2
+        margin-bottom: 8px
+    p:last-of-type
+        margin-top: 16px

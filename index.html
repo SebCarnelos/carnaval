@@ -2,22 +2,25 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" container="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" container="ie=edge">
     <title>Éditions Carnaval, label d'auto-édition indépendant : BD, webcomic, illustrations...</title>
-    <meta name="description" content="Carnaval est un label d'édition de bande-dessinée créé en 2005 par Sébastien (Sebs) Carnélos. Retrouvez toutes nos créations et publications sur notre site web.">
-    <meta name="keywords" lang="fr" content="editeur, bd, bande-dessinée, bande dessinee, comics, manga, comic, fanzine, webzine, webcomic, webomics, webtoon, webtoons, lost angels, génération héros, gh comics, les lemmings, indécomics, french comics, nelcia, dessin, illustrations">
-    <meta name="identifier-url" content="https://www.editionscarnaval.fr/">
-    <meta property="og:url" content="https://www.editionscarnaval.fr/">
-    <meta property="og:title" content="Éditions Carnaval, label d'auto-édition indépendant : BD, webcomic, illustrations...">
-    <meta property="og:description" content="Carnaval est un label d'édition de bande-dessinée créé en 2005 par Sébastien (Sebs) Carnélos. Retrouvez toutes nos créations et publications sur notre site web.">
-    <!-- <meta property="og:image" content=""> -->
-    <meta property="og:locale" content="fr_FR">
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:900|Montserrat:300" rel="stylesheet">
+    <meta name="description" container="Carnaval est un label d'édition de bande-dessinée créé en 2005 par Sébastien (Sebs) Carnélos. Retrouvez toutes nos créations et publications sur notre site web.">
+    <meta name="keywords" lang="fr" container="editeur, bd, bande-dessinée, bande dessinee, comics, manga, comic, fanzine, webzine, webcomic, webomics, webtoon, webtoons, lost angels, génération héros, gh comics, les lemmings, indécomics, french comics, nelcia, dessin, illustrations">
+    <meta name="identifier-url" container="https://www.editionscarnaval.fr/">
+    <meta property="og:title" container="Éditions Carnaval, label d'auto-édition indépendant : BD, webcomic, illustrations...">
+    <meta property="og:type" container="website">
+    <meta property="og:image" container="https://www.editionscarnaval.fr/img/meta-img.png">
+    <meta property="og:url" container="https://www.editionscarnaval.fr/">
+    <meta property="twitter:card" container="img/twitter-card/png">
+    <meta property="og:description" content="Carnaval est un label d'édition de bande-dessinée. Retrouvez toutes nos créations et publications sur notre site web.">
+    <meta property="og:site_name" content="Éditions Carnaval">
+    <meta name="twitter:image:alt" content="Carnaval banner">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f921b59169.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    <link rel="icon" type="image/png" href="img/ico.png">
+    <link rel="icon" type="image/png" href="img/favicon.svg">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21113619-3"></script>
     <script>
@@ -28,48 +31,216 @@
     </script>
 </head>
 <body>
-    <div id="banner">
-        <div id="banlogo">
-            <img src="img/banner_logo.jpg" alt="Carnaval logo">
+    <script>
+        if (navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexOf("Trident/") > -1){
+        alert("Ce site n'est pas compatible avec Internet Explorer. Nous vous recommandons d'utiliser un autre navigateur.");
+        }
+    </script>
+    <header>
+        <div class="container">
+            <img src="img/logo2020_color_ban.svg" alt="Logo 2020 long couleur">
+            <div class="social">
+                <a href="https://twitter.com/twitCarnaval" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/editionscarnaval/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://discord.gg/htWya3zR4k" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
         </div>
-        <div id="banarrow">
-            <a href="#wip" class="js-scrollTo">&#8675;</a>
+    </header>
+    <div id="slider">
+        <div id="dark-gradient">
+            <div class="container">
+                <img src="img/lady_wolf_logo.svg" alt="Lady Wolf logo">
+                <p>Maintenant disponible sur <img src="img/webtoon_canvas_logo.png" alt="Logo Webtoon Canvas"></p>
+                <a href="https://www.webtoons.com/fr/challenge/lady-wolf/list?title_no=681490" target="_blank">
+                    <button><img class="button-icon" src="img/book-open-line.svg" alt="Icone Lire">Lire</button>
+                </a>
+            </div>
+            <div class="container">
+                <img src="img/generation_heros_logo.png" alt="Génération Héros logo">
+                <p>2011 → 2021, il y a 10 ans, Misty faisait son entrée sur scène.</p>
+                <a href="https://forms.gle/8m6fSqqGf7skjJrZ6" target="_blank">
+                    <button><img class="button-icon" src="img/money-euro-circle-line.svg" alt="Icone Acheter">Acheter</button>
+                </a>
+            </div>
         </div>
     </div>
-
-    <div id="wip">
-        <img src="img/traffic-cone.svg" alt="Cône">
-        <p>Les <span class="carnaval">Éditions Carnaval</span> reviennent bientôt avec un tout <strong>nouveau site</strong> et de <strong>nouveaux projets</strong> !</p>
+    <div id="intro" class="dark-bg">
+        <div class="container padding-v-64">
+            <h1>Qui sommes-nous</h1>
+            <p>Les Éditions <strong>CARNAVAL</strong> sont un label d’édition de bande-dessinée créé en 2005 par Sébastien (Sebs) Carnélos.</p>
+            <p>Nous publions et distribuons, sur support papier ou numérique, les créations d’auteur·rice·s et artistes indépendant·e·s. Nous souhaitons proposer des oeuvres diversifiées dans leur style et dans leur genre tournées vers un large public.</p>
+        </div>
     </div>
-
-    <div id="socialnetwork">
-        <p>En attendant, vous pouvez suivre ce qui se cache dans <strong>les coulisses</strong> en nous suivant sur les <strong>réseaux sociaux</strong> :</p>
-        <a href="https://www.facebook.com/editionscarnaval/"><img src="img/facebook.svg" alt="Facebook"></a>
-        <a href="http://twitter.com/twitCarnaval"><img src="img/twitter.svg" alt="Twitter"></a>
-        <a href="https://plus.google.com/101647825269832186908"><img src="img/google-plus.svg" alt="Google+"></a>
-        <!-- <img src="img/instagram.svg" alt="Instagram"> -->
-    </div>
-
-    <div id="generationheroes">
-        <p>Vous pouvez toujours <strong>commander</strong> nos précédentes <strong>publications</strong> toujours en stock :</p>
-        <img id="gh1cover" src="img/gh1_cover.jpg" alt="Génération Héros #1">
-        <p id="ghtitle">Génération Héros : Misty</p>
-        <p id="ghdetails">Scénario : Greg Covin | Dessin : Sebs<br>24 pages couleurs, format comics</p>
-        <p id="price">5,99 €</p>
-        <p id="shipping">frais de port inclus</p>
-        <p>L'intégralité des bénéfices est reversée à l'<strong><a href="https://www.unicef.org/fr" target="_blank">UNICEF</a></strong>.</p>
-        <p><a href="https://www.unicef.org/fr" target="_blank"><img id="unicef" src="img/Unicef_Logo.svg" alt="logo UNICEF"></a></p>
-        <img class="preview" src="img/gh1_p01.jpg" alt="Génération Héros n°1, page 1"><img class="preview" src="img/gh1_p04.jpg" alt="Génération Héros n°1, page 4"><img class="preview" src="img/gh1_p10.jpg" alt="Génération Héros n°1, page 10">
-        <p id="order">Je souhaite recevoir le bulletin de commande :</p>
-        <form method="POST" action="https://formspree.io/order-gh1@editionscarnaval.fr">
-            <input type="email" name="email" placeholder="Email">
-            <button type="submit">Envoyer</button>
-        </form>
-    </div>
-
-    <div id="footer">
-        <p id="websebs">Conception : <a href="https://github.com/SebCarnelos">Websebs</a></p>
-        <p id="flaticons">Icons made by <a href="https://www.flaticon.com/authors/daniel-bruce" title="Daniel Bruce">Daniel Bruce</a> & <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>       
-    </div>
+    <main>
+        <div class="container">
+            <section>
+                <div class="book">
+                    <img src="img/books/lady_wolf.jpg" alt="Couverture Lady Wolf">
+                    <div class="book-info">
+                        <h2>Lady Wolf</h2>
+                        <p class="gray">Sebs</p>
+                        <p class="gray">En cours</p>
+                        <p class="gray">Webtoon, couleurs</p>
+                    </div>
+                    <p>Bienvenue à Garockh City. Dans les recoins sombre de cette métropole lumineuse et calme se terre le crime et la corruption. Chaque nuit offre son lot de chaperons délinquants et autres créatures fantastiques. Une mystérieuse justicière sort de l'ombre en quête de vérité : on l'appelle Lady Wolf.</p>
+                </div>
+                <div class="book-action">
+                    <p class="price available">Gratuit</p>
+                    <a href="https://www.webtoons.com/fr/challenge/lady-wolf/list?title_no=681490" target="_blank">
+                        <button><img class="button-icon" src="img/book-open-line.svg" alt="Icone Lire">Lire</button>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <div class="book">
+                    <img src="img/books/generation_heros_1.jpg" alt="Couverture Génération Héros n°1">
+                    <div class="book-info">
+                        <h2>Génération Héros n°1 : Misty</h2>
+                        <p class="gray">Grégory Covin, Sebs</p>
+                        <p class="gray">janvier 2011</p>
+                        <p class="gray">32 pages, couleurs, format comics</p>
+                    </div>
+                    <p>Pour sa première mission, Misty devra affronter le redoutable Shadowhands et venir à bout de ses propres peurs afin de comprendre que ce ne sont pas les pouvoirs qui font l’héroïne.</p>
+                </div>
+                <div class="book-action">
+                    <p class="price available">6,00 €</p>
+                    <a href="https://forms.gle/8m6fSqqGf7skjJrZ6" target="_blank">
+                        <button><img class="button-icon" src="img/money-euro-circle-line.svg" alt="Icone Acheter">Acheter</button>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <div class="book">
+                    <img src="img/books/lost_angels_3.jpg" alt="Couverture Lost Angels tome 3">
+                    <div class="book-info">
+                        <h2>Lost Angels tome 3 : Un nouveau départ</h2>
+                        <p class="gray">Sebs</p>
+                        <p class="gray">Avril 2008</p>
+                        <p class="gray">32 pages, noir et blanc, format A5</p>
+                    </div>
+                    <p>Lost Angels, la conclusion ! Sébastian convainc Nelcia qu'elle est la seule à pouvoir ouvrir les portes du Paradis des anges, mais quelles sont vraiment ses intentions ?</p>
+                </div>
+                <div class="book-action">
+                    <p class="price unavailable">En rupture</p>
+                </div>
+            </section>
+            <section>
+                <div class="book">
+                    <img src="img/books/lost_angels_2.jpg" alt="Couverture Lost Angels tome 2">
+                    <div class="book-info">
+                        <h2>Lost Angels tome 2 : La vérité dévoilée</h2>
+                        <p class="gray">Sebs</p>
+                        <p class="gray">Mars 2007</p>
+                        <p class="gray">32 pages, noir et blanc, format A5</p>
+                    </div>
+                    <p>Tandis que Nelcia cherche à comprendre ce qui lui arrive, d'étranges personnes vont l'ammenner à connaître la vérité sur ses origines.</p>
+                </div>
+                <div class="book-action">
+                    <p class="price unavailable">En rupture</p>
+                </div>
+            </section>
+            <section>
+                <div class="book">
+                    <img src="img/books/lost_angels_1.jpg" alt="Couverture Lost Angels tome 1">
+                    <div class="book-info">
+                        <h2>Lost Angels tome 1 : Le réveil</h2>
+                        <p class="gray">Sebs</p>
+                        <p class="gray">Avril 2006</p>
+                        <p class="gray">32 pages, noir et blanc, format A5</p>
+                    </div>
+                    <p>Une petite fille est trouvée abandonnée sur le toit d'un immeuble. 15 ans plus tard, l'enfant a grandi : Nelcia est au lycée et se découvre d'étranges pouvoirs.</p>
+                </div>
+                <div class="book-action">
+                    <p class="price unavailable">En rupture</p>
+                </div>
+            </section>
+            <section>
+                <div class="book">
+                    <img src="img/books/elphallis_1.jpg" alt="Couverture Elphallis tome 1">
+                    <div class="book-info">
+                        <h2>Elphallis tome 1 : Le début du voyage</h2>
+                        <p class="gray">Luby</p>
+                        <p class="gray">Mars 2007</p>
+                        <p class="gray">40 pages, noir et blanc, format A5</p>
+                    </div>
+                    <p>Il est temps pour Millian de commencer sa quête initiatique dans le monde d'Elphallis.</p>
+                </div>
+                <div class="book-action">
+                    <p class="price unavailable">En rupture</p>
+                </div>
+            </section>
+            <section>
+                <div class="book">
+                    <img src="img/books/elphallis_0.jpg" alt="Couverture Elphallis tome 0">
+                    <div class="book-info">
+                        <h2>Elphallis tome 0 : Introduction</h2>
+                        <p class="gray">Luby</p>
+                        <p class="gray">Décembre 2006</p>
+                        <p class="gray">12 pages, noir et blanc, format A5</p>
+                    </div>
+                    <p>Millian fait un drôle de rêve mais découvre rapidement qu'il s'agit bien plus de cela.</p>
+                </div>
+                <div class="book-action">
+                    <p class="price unavailable">En rupture</p>
+                </div>
+            </section>
+            <section>
+                <div class="book">
+                    <img class="alt-cover" src="img/books/le_monde_feerique_de_a.jpg" alt="Couverture A Le Monde Féérique de...">
+                    <img class="alt-cover" src="img/books/le_monde_feerique_de_b.jpg" alt="Couverture B Le Monde Féérique de...">
+                    <div class="book-info">
+                        <h2>Le Monde Féérique de...</h2>
+                        <p class="gray">Aurore W, Ayame</p>
+                        <p class="gray">Mars 2007</p>
+                        <p class="gray">24 pages, noir et blanc, format A5</p>
+                    </div>
+                    <p>Ce recueil d'illustrations, sur le thème des créatures fantastiques et imaginaires, a été conjointement réalisé par AuroreW et Ayame. Les deux autrices ont laissé libre cours à leur imagination pour donner vie à leur propre univers.</p>
+                </div>
+                <div class="book-action">
+                    <p class="price unavailable">En rupture</p>
+                </div>
+            </section>
+            <section>
+                <div class="book">
+                    <img src="img/books/summertime.jpg" alt="Couverture Summertime">
+                    <div class="book-info">
+                        <h2>Summertime</h2>
+                        <p class="gray">Ayame</p>
+                        <p class="gray">Juillet 2006</p>
+                        <p class="gray">16 pages, noir et blanc, format A5</p>
+                    </div>
+                    <p>Pour fêter l'été, les Editions Carnaval publie ce recueil d'illustrations, signé Ayame, sur le thème du soleil et du bikini.</p>
+                </div>
+                <div class="book-action">
+                    <p class="price unavailable">En rupture</p>
+                </div>
+            </section>
+            <section>
+                <div class="book">
+                    <img src="img/books/la_jeune_fille.jpg" alt="Couverture La jeune fille">
+                    <div class="book-info">
+                        <h2>Lady Wolf</h2>
+                        <p class="gray">Sebs</p>
+                        <p class="gray">Août 2005</p>
+                        <p class="gray">4 pages, noir et blanc, format A5</p>
+                    </div>
+                    <p>Mari est une gothic-lolita fan du groupe japonais Moi Dix Mois. Le plus grand jour de sa vie approche, elle va voir ses idoles en concert, à moins que...</p>
+                </div>
+                <div class="book-action">
+                    <p class="price unavailable">En rupture</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="dark-bg">
+        <div class="container padding-v-64">
+            <small>
+                <h2>Éditions CARNAVAL</h2>
+                <p>Tous les contenus sont copyright © 2021 Éditions Carnaval ou leurs propriétaires respectifs. Carnaval et ses logos sont © 2021 Éditions Carnaval. Tous droits réservés.</p>
+                <p>Site réalisé par <a href="http://www.sebcarnelos.fr" class="_blank">Seb Carnélos</a></p>
+            </small>
+            <img src="img/logo2020_nb_notext_noshadow.svg" alt="Logo 2020 noir et blanc">
+        </div>
+    </footer>
 </body>
-</html>
+</html> 
