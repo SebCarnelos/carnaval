@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', function(){
     const bannerArray = document.querySelectorAll('#gradient > .container');
     const bgImage = document.getElementById('slider');
     const gradient = document.getElementById('gradient');
-    const imgages = ['url("img/lady_wolf_ban.jpg")', 'url("img/generation_heros_ban.jpg")', 'url("img/lost_angels_ban.jpg")'];
-    bgImage.style.backgroundImage = imgages[0];
-    bgImage.style.backgroundPosition = 'right';
+    const images = ['url("img/lady_wolf_ban.jpg")', 'url("img/generation_heros_ban.jpg")', 'url("img/lost_angels_ban.jpg")'];
+    bgImage.style.backgroundImage = images[0];
+    bgImage.style.backgroundPosition = 'left';
     let slidePosition = 0;
     bannerArray[1].style.display = bannerArray[2].style.display = 'none';
     bannerArray[1].style.opacity = bannerArray[2].style.opacity = 0;
 
     const changeSlide = () => {
         if (slidePosition === 2) {
-            bgImage.style.backgroundImage = imgages[0];
-            bgImage.style.backgroundPosition = 'right';
+            bgImage.style.backgroundImage = images[0]; // LW
+            bgImage.style.backgroundPosition = 'left';
             bannerArray[2].style.opacity = 0;
             gradient.classList.add('dark-gradient');
             gradient.classList.remove('white-gradient');
@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function(){
             setTimeout(() => {bannerArray[0].style.opacity = 1;}, 600);
             slidePosition = 0;
         } else if (slidePosition === 0) {
-            bgImage.style.backgroundImage = imgages[1];
-            bgImage.style.backgroundPosition = 'left';
+            bgImage.style.backgroundImage = images[1]; // GH
+            bgImage.style.backgroundPosition = 'center';
             bannerArray[0].style.opacity = 0;
             bannerArray[1].style.display = 'flex';
             setTimeout(() => {
@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function(){
             }, 500);
             slidePosition = 1;
         } else { // if (slidePosition === 1)
-            bgImage.style.backgroundImage = imgages[2];
-            bgImage.style.backgroundPosition = 'center';
+            bgImage.style.backgroundImage = images[2]; // LA
+            bgImage.style.backgroundPosition = 'right';
             bannerArray[1].style.opacity = 0;
             bannerArray[2].style.display = 'flex';
             gradient.classList.remove('dark-gradient');

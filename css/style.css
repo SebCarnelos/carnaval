@@ -164,6 +164,11 @@ header .container {
     row-gap: 8px;
   }
 }
+@media (max-width: 844px) {
+  header .container img {
+    width: -webkit-fill-available;
+  }
+}
 
 .social {
   display: flex;
@@ -184,6 +189,11 @@ header .container {
   line-height: 2.25rem;
   font-weight: 600;
   transition: all 1s ease-in-out;
+}
+@media (max-width: 844px) {
+  #slider .comics-logos {
+    width: -webkit-fill-available;
+  }
 }
 
 #gradient {
@@ -297,20 +307,32 @@ footer {
   line-height: 1.25rem;
   font-weight: 300;
 }
+@media (max-width: 844px) {
+  footer {
+    background-image: url("../img/logo2020_nb_notext_noshadow_croped.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+}
 footer .container {
   display: flex;
   justify-content: center;
   gap: 145px;
-  height: 135px;
+  min-height: 135px;
 }
-@media (max-width: 844px) {
-  footer .container {
-    gap: 64px;
-  }
-}
-footer img {
+footer .image {
   mix-blend-mode: luminosity;
   opacity: 0.33;
+  background-image: url("../img/logo2020_nb_notext_noshadow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 112.76px;
+}
+@media (max-width: 844px) {
+  footer .image {
+    display: none;
+  }
 }
 
 small {
@@ -321,6 +343,4 @@ small h2 {
 }
 small p:last-of-type {
   margin-top: 16px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

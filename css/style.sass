@@ -129,6 +129,9 @@ header
             flex-direction: column
             padding: 16px
             row-gap: 8px
+        img
+            @media (max-width: $breakpoint-s)
+                width: -webkit-fill-available
 
 .social
     display: flex
@@ -145,6 +148,10 @@ header
     line-height: $lh-medium
     font-weight: $fw-semi-bold
     transition: all 1s ease-in-out
+    .comics-logos
+        @media (max-width: $breakpoint-s)
+            // width: 100%
+            width: -webkit-fill-available
 
 #gradient
     height: inherit
@@ -236,16 +243,25 @@ footer
     font-size: $fs-small
     line-height: $lh-small
     font-weight: $fw-light
+    @media (max-width: $breakpoint-s)
+        background-image: url("../img/logo2020_nb_notext_noshadow_croped.png")
+        background-repeat: no-repeat
+        background-position: right
+        background-size: contain
     .container
         display: flex
         justify-content: center
         gap: 145px
-        height: 135px
-        @media (max-width: $breakpoint-s)
-            gap: 64px
-    img
+        min-height: 135px
+    .image
         mix-blend-mode: luminosity
         opacity: 0.33
+        background-image: url("../img/logo2020_nb_notext_noshadow.svg")
+        background-size: contain
+        background-repeat: no-repeat
+        width: 112.76px
+        @media (max-width: $breakpoint-s)
+            display: none
     
 small
     max-width: 412px
