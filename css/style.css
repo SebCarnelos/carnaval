@@ -79,12 +79,12 @@ h2 {
 
 .small {
   font-size: small;
+  & > a  {
+    color: lab(58.96% 34.35 -48.77);
+    text-decoration: underline;
+  }
 }
 
-.small > a  {
-  color: lab(58.96% 34.35 -48.77);
-  text-decoration: underline;
-}
 
 a {
   text-decoration: none;
@@ -98,38 +98,34 @@ header {
   justify-content: center;
   align-items: center;
   gap: 64px;
+  & > a:hover {
+    transform: scale(1.15);
+  }
 }
 
-header > a:hover {
-  transform: scale(1.15);
-}
 
 section {
   display: flex;
   flex-direction: column;
   padding-left: 96px;
   padding-right: 96px;
-}
-
-section:first-child {
-  padding: 0 96px;
-  align-items: center;
-  gap: 12px;
-}
-
-section:first-child > p {
-  max-width: 760px;
-}
-
-section:nth-child(2) {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  align-items: stretch;
-}
-
-section:last-child {
-  padding-top: 48px;
-  padding-bottom: 96px;
+  &:first-of-type {
+    padding: 64px 96px 0;
+    align-items: center;
+    gap: 12px;
+    & > p {
+      max-width: 760px;
+    }
+  }
+  &:nth-of-type(2) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    align-items: stretch;
+  }
+  &:last-of-type {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
 }
 
 #ladywolf {
@@ -142,17 +138,17 @@ section:last-child {
   flex-direction: column;
   align-items: center;
   gap: 64px;
+  & > a:first-of-type > img {
+    cursor: pointer;
+    border-radius: 64px;
+    box-shadow: 0px 0px 20px 0px #434264ab;
+    &:hover {
+      box-shadow: 0px 0px 40px 1px #434264ab;
+    }
+  }
 }
 
-#ladywolf > a:first-child > img {
-  cursor: pointer;
-  border-radius: 64px;
-  box-shadow: 0px 0px 20px 0px #434264ab;
-}
 
-#ladywolf > a:first-child > img:hover {
-  box-shadow: 0px 0px 40px 1px #434264ab;
-}
 
 button {
   cursor: pointer;
@@ -168,12 +164,12 @@ button {
   border-radius: 8px;
   padding: 16px 24px;
   gap: 8px;
+  &:hover {
+    box-shadow: 0 4px 11px rgba(245, 210, 101, .50);
+    transition-duration: .1s;
+  }
 }
 
-button:hover {
-  box-shadow: 0 4px 11px rgba(245, 210, 101, .50);
-  transition-duration: .1s;
-}
 
 footer {
   padding: 24px;
@@ -196,7 +192,43 @@ h4 {
   justify-content: center;
 }
 
-/*
-@media (max-width: 844px) {
+/* mobile */
+@media (max-width: 1031px) {
+  header > img {
+    width: 75%;
+  }
+
+  #mlb2-42698981 {
+    max-width: 800px;
+  }
+
+  section:last-of-type {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  section:nth-of-type(2) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #ladywolf {
+    padding-left: 96px;
+    padding-right: 96px;
+    & a:first-of-type > img {
+      border-radius: 32px;
+      width: stretch;
+    }
+  }
+  
 }
-*/
+
+@media (max-width: 890px) {  
+    #ladywolf {
+      gap: 32px;
+      & a:first-of-type {
+        width: 75%;
+      }
+    }
+  
+}
