@@ -155,6 +155,7 @@ button {
   background-color: #f5d265;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: "Open Sans", sans-serif;
   color: black;
   font-size: 1.125rem;
@@ -213,8 +214,8 @@ h4 {
   }
 
   #ladywolf {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 40px;
+    padding-right: 40px;
     & a:first-of-type > img {
       border-radius: 32px;
       width: stretch;
@@ -223,12 +224,23 @@ h4 {
   
 }
 
-@media (max-width: 890px) {  
-    #ladywolf {
-      gap: 32px;
-      & a:first-of-type {
-        width: 75%;
+@media (max-width: 890px) {
+  section:first-of-type {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  #ladywolf {
+    gap: 32px;
+    & a:first-of-type {
+      width: 75%;
+    }
+    & > a:last-of-type {
+      width: 100%;
+      & > button {
+        width: stretch;
       }
     }
+  }
   
 }
